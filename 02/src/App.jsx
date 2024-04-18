@@ -1,14 +1,20 @@
 import { useState } from "react"
 
 function App() {
-  let [counter,setCounter] =  useState(15)
+  let [counter,setCounter] =  useState(2)
   
 
   const addValue = () =>{
-    setCounter(counter++)
+    setCounter(counter+1)
+    console.log(`added ${counter}`)
+    
   }
   const rem = () =>{
-    setCounter(counter--)
+    if(counter > 0){
+      setCounter(counter-1)
+      console.log(` remed ${counter}`)
+    }
+    
   }
 
   return (
