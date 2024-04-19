@@ -5,7 +5,11 @@ function App() {
   
 
   const addValue = () =>{
-    setCounter(counter+1)
+    setCounter(counter => counter +1)
+    setCounter(counter => counter +1)
+    setCounter(counter => counter +1)
+    setCounter(counter => counter +1)
+    setCounter(counter => counter +1)
     console.log(`added ${counter}`)
     
   }
