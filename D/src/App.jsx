@@ -2,6 +2,9 @@ import { useState } from 'react'
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Destinations from './components/Destinations'
+import Search from './components/Search'
+import Selects from './components/Selects'
 //import './App.css'
 
 function App() {
@@ -11,6 +14,9 @@ function App() {
     <>
         <Navbar />  
         <Hero />
+        <Destinations />
+        <Search />
+        <Selects />
     </>
   )
 }

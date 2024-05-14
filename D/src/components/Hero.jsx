@@ -1,11 +1,12 @@
 import React from 'react'
 import vid from '../assets/8418270-uhd_4096_2160_25fps.mp4'
+import vid1 from '../assets/beachVid.mp4'
 import {AiOutlineSearch} from'react-icons/ai'
 import { BiColor } from 'react-icons/bi'
 function Hero () {
     return (
         <div className='w-full h-screen relative '>
-            <video className='w-full h-full object-cover' src={vid} autoPlay loop muted/>
+            <video className='w-full h-full object-cover' src={vid1} autoPlay loop muted/>
             <div className='absolute w-full h-full top-0 left-0 bg-gray-900/30'>
             
             </div>
