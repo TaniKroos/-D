@@ -41,7 +41,7 @@ const sliderData = [
   },
 ];
 
-const Carousel = () => {
+const Crsl = () => {
   const [slide, setSlide] = useState(0);
   const length = sliderData.length;
 
@@ -61,15 +61,8 @@ const Carousel = () => {
   };
 
   return (
-    <div className='max-w-[1240px] mx-auto px-4 py-16 relative flex justify-center items-center'>
-      <BsArrowLeftSquareFill
-        onClick={prevSlide}
-        className='absolute top-[50%] text-3xl text-white cursor-pointer left-8'
-      />
-      <BsArrowRightSquareFill
-        onClick={nextSlide}
-        className='absolute top-[50%] text-3xl text-white cursor-pointer right-8'
-      />
+    <div className='relative justify-center items-center' >
+     
       {sliderData.map((item, index) => (
         <div  key={index}
         className={`absolute pt-8 top-0 left-0 w-full h-full transition-opacity duration-500 ${
@@ -84,4 +77,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Crsl;

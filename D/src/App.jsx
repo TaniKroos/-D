@@ -8,6 +8,8 @@ import Selects from './components/Selects'
 import Carousel from './components/Carousel'
 import Footer from './components/Footer'
 import TestimonialSection from './components/TestimonialSection'
+import Search2 from './components/Search2'
+import Se from './components/Se'
 // import TestimonialSection from './components/TestimonialSection'
 //import './App.css'
 
@@ -19,15 +21,17 @@ function App() {
     <>
         <Navbar />  
         <Hero  />
-        <section  >
+    
         <Destinations />
-        </section>
+      
         
-        <Search />
+        <Search2 />
        
         <Selects />
-        <Carousel />
+        {/* <Carousel /> */}
+        <Search />
        <TestimonialSection />
+
         <Footer />
         
     </>
