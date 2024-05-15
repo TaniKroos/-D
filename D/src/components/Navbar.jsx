@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { BsPerson } from 'react-icons/bs'
 import  { BiSearch } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -22,16 +22,22 @@ function Navbar() {
     const cb = () => {
         setB(!b)
     }
+    
+   
      return (
         <div className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'>
             <div>
                 <h1 onClick={handleNav}  className={logo ? 'hidden' : "block"}>TravelBasket</h1>
             </div>
-            <ul className='hidden md:flex '>
+            <ul className='hidden md:flex pr-16 '>
                 <li>Home</li>
-                <li>Destinations</li>
-                <li>Travel</li>
+                <li>Domestic</li>
+                <li className="mr-6">
+                  Plan 
+                </li>
+                <li>International</li>
                 <li>Views</li>
+                <li>Testimonials</li>
             </ul>
             <div className='hidden md:flex'>
                 <div className='bg-blur-lg pr-8' >
@@ -45,6 +51,16 @@ function Navbar() {
                     </div>
                 
             </div>
+
+
+
+
+
+
+
+
+
+
 
             {/*  */}
             <div onClick={handleNav} className=' block md:hidden z-10'>

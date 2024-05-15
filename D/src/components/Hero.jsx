@@ -10,7 +10,7 @@ function Hero () {
             <div className='absolute w-full h-full top-0 left-0 bg-gray-900/30'>
             
             </div>
-            <div className='absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4'>
+            <div className='absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-8'>
                 <h1>TravelBasket</h1>
                 <h2 className='py-4'>Top 1% Locations worldwide</h2>
                 {/* <form action="" className='flex justify-between max-w-[700px] mx-auto w-full border p-1 rounded-md text-black bg-gray-100/90'>

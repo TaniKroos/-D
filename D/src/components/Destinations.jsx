@@ -1,35 +1,34 @@
 import React from 'react'
-import BoraBora from '../assets/borabora.jpg';
-import BoraBora2 from '../assets/borabora2.jpg';
-import Maldives from '../assets/maldives.jpg';
-import Maldives2 from '../assets/maldives2.jpg';
-import KeyWest from '../assets/keywest.jpg';
 
 
-function Destinations() {
-    return (
-        <div className='max-w-[1240px] mx-auto py-16 px-4 text-center pb-8'>
-            <h1>All-Inclusive Resorts</h1>
-            <h3 className='py-5'>On Caribbean's Best beaches</h3>
-            <div className='grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4'>
-                <img className='w-full h-full object-cover col-span-2 md:col-span-3 row-span-2' src={BoraBora} alt="/" />
-                <img className='w-full h-full object-cover' src={BoraBora2} alt="/" />
-                <img className='w-full h-full object-cover' src={Maldives} alt="/" />
-                <img className='w-full h-full object-cover' src={Maldives2} alt="/" />
-                <img className='w-full h-full object-cover' src={KeyWest} alt="/" />
-                <img className='w-full h-full object-cover ' src={BoraBora} alt="/" />
-                <img className='w-full h-full object-cover' src={KeyWest} alt="/" />
-                <img className='w-full h-full object-cover col-span-2 md:col-span-3 row-span-2' src={KeyWest} alt="/" />
-                <img className='w-full h-full object-cover' src={KeyWest} alt="/" />
-                <img className='w-full h-full object-cover' src={KeyWest} alt="/" />
-                <img className='w-full h-full object-cover col-span-2 md:col-span-3 row-span-2' src={Maldives2} alt="/" />
-                <img className='w-full h-full object-cover' src={Maldives2} alt="/" />
-                <img className='w-full h-full object-cover' src={Maldives2} alt="/" />
-                <img className='w-full h-full object-cover' src={Maldives2} alt="/" />
-                <img className='w-full h-full object-cover' src={Maldives2} alt="/" />
-            </div>
-        </div>
-    )
-} 
+import Himachal from '../assets/Himachal.jpg'
+import Rajasthan from '../assets/Rajasthan.jpg'
+import Goa from '../assets/Goa.jpg'
+import Kerala from '../assets/kerala.jpg'
 
-export default Destinations
+import Kashmir from '../assets/Kashmir.jpg'
+import Uk from '../assets/Uk.jpg'
+
+import SelectsCard from './SelectsCard';
+const Selects = () => {
+  return (
+    <>
+    <div className='max-w-[1240px]  mx-auto px-4 py-16 text-center bg-gray-900/15'>
+      <h2>Domestic Destinations Covered by Us</h2>
+    </div>
+    <div className='max-w-[1240px] bg-gray-900/15 mx-auto px-4 py-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+      
+
+    <SelectsCard bg={Himachal} text='Himachal'/>
+    <SelectsCard bg={Kerala} text='kerala'/>
+    <SelectsCard bg={Rajasthan} text='Rajasthan'/>
+    <SelectsCard bg={Goa} text='Goa'/>
+    <SelectsCard bg={Kashmir} text='Kashmir'/>
+    <SelectsCard bg={Uk} text='Uttrakhand'/>
+        
+    </div>
+    </>
+  )
+}
+
+export default Selects
