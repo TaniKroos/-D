@@ -4,8 +4,8 @@ import { RiCustomerService2Fill } from 'react-icons/ri';
 
 function Search() {
     return (
-        <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16'>
-
+        <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-4'>
+           
             <div className='lg:col-span-2 flex flex-col justify-evenly'>
                 <div>
                     <h2>LUXURY VACATIONS FOR TWO PEOPLE</h2>
@@ -38,12 +38,12 @@ function Search() {
 
 
             <div>
-          <div className='border text-center'>
+          {/* <div className='border text-center'>
               <p className='pt-2'>GET AN ADDITIONAL 10% OFF</p>
               <p className='py-4'>12 HOURS LEFT</p>
               <p className='bg-gray-800 text-gray-200 py-2'>BOOK NOW AND SAVE</p>
-          </div>
-          <form className='w-full'>
+          </div> */}
+          {/* <form className='w-full'>
               <div className='flex flex-col my-2'>
                   <label>Destination</label>
                   <select className='border rounded-md p-2'>
@@ -66,7 +66,17 @@ function Search() {
                   <input className='border rounded-md p-2' type="text" placeholder='mobile' />
               </div>
                 <button className='w-full my-4'>Rates & Availabilities</button>
-          </form>
+          </form> */}
+          <div className='pt-40'>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL6RrxEF30ZKbICryPNKgmlDzDnXiP3Td02d92_ESyPzgUvg/viewform?embedded=true" 
+             width="100%" 
+             height="700" 
+             frameborder="0" 
+             marginheight="0" 
+             marginwidth="0" 
+             style={{ border: 'none', maxWidth: '600px', margin: '0 auto', borderRadius: '8px' }} 
+             allowfullscreen="true">Loading…</iframe>
+          </div>
       </div>
 
         </div>

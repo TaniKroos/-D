@@ -8,7 +8,7 @@ import KeyWest from '../assets/keywest.jpg';
 
 function Destinations() {
     return (
-        <div className='max-w-[1240px] mx-auto py-16 px-4 text-center bg-gray-900/20'>
+        <div className='max-w-[1240px] mx-auto py-16 px-4 text-center pb-8'>
             <h1>All-Inclusive Resorts</h1>
             <h3 className='py-5'>On Caribbean's Best beaches</h3>
             <div className='grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4'>

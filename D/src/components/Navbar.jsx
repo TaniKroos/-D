@@ -12,10 +12,20 @@ function Navbar() {
         setNav(!nav)
         setLogo(!logo)
     }
+    const [b,setB] = useState(false)
+    const handleB = () =>{
+        setB(!b)
+        
+
+    }
+  
+    const cb = () => {
+        setB(!b)
+    }
      return (
         <div className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'>
             <div>
-                <h1 onClick={handleNav} className={logo ? 'hidden' : "block"}>TravelBasket</h1>
+                <h1 onClick={handleNav}  className={logo ? 'hidden' : "block"}>TravelBasket</h1>
             </div>
             <ul className='hidden md:flex '>
                 <li>Home</li>
@@ -24,8 +34,16 @@ function Navbar() {
                 <li>Views</li>
             </ul>
             <div className='hidden md:flex'>
-                <BsPerson className='mr-2'  size={20}/>
-                <BiSearch size={20} />
+                <div className='bg-blur-lg pr-8' >
+                    <BsPerson onMouseEnter={handleB} className={b? 'hidden ' : 'mx-4'} size={20}/>
+                    <div onMouseLeave={handleB} className={b? ' mx-auto bg-blur-20' : 'hidden'} >
+                    <p className='pt-8 bg-blur-lg '>Contact:</p>
+                    <p>+91 8447951790</p>
+                    <p>Email</p>
+                    <p>tanishsaini26@gmail.com</p>
+                    </div>
+                    </div>
+                
             </div>
 
             {/*  */}
