@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import TestimonialSection from './components/TestimonialSection'
 import Search2 from './components/Search2'
 import Se from './components/Se'
+import Form from './components/Form'
 // import TestimonialSection from './components/TestimonialSection'
 //import './App.css'
 
@@ -23,16 +24,18 @@ function App() {
         <Hero  />
     
         <Destinations />
-      
+        <Se  />
         
-        <Search2 />
+    {/* <Search2 /> */}
        
         <Selects />
+        {/* <Se/> */}
         {/* <Carousel /> */}
-        <Search />
+        {/* <Search /> */}
        <TestimonialSection />
 
         <Footer />
+        {/* <Form /> */}
         
     </>
   )
