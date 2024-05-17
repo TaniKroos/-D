@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from 'react-icons/bs';
-import cuk from '../carasouel/cuk.jpg'
-import ch from '../carasouel/chimachal.jpg'
-import ck from '../carasouel/ckerala.jpg'
-import ckash from '../carasouel/ckashmir.jpg'
-import craj from '../carasouel/craj.jpg'
-import cthai from '../carasouel/cthai.jpg'
-import csinga from '../carasouel/csinga.jpg'
+import cuk from '../carasouel/cuk.jpg';
+import ch from '../carasouel/chimachal.jpg';
+import ck from '../carasouel/ckerala.jpg';
+import ckash from '../carasouel/ckashmir.jpg';
+import craj from '../carasouel/craj.jpg';
+import cthai from '../carasouel/cthai.jpg';
+import csinga from '../carasouel/csinga.jpg';
 
 const sliderData = [
   {
@@ -19,25 +19,25 @@ const sliderData = [
     url: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
   },
   {
-    url: cuk
+    url: cuk,
   },
   {
-    url: ch
+    url: ch,
   },
   {
-    url: ck
+    url: ck,
   },
   {
-    url: ckash
+    url: ckash,
   },
   {
-    url: craj
+    url: craj,
   },
   {
-    url: cthai
+    url: cthai,
   },
   {
-    url: csinga
+    url: csinga,
   },
 ];
 
@@ -48,6 +48,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
+      
     }, 4000); // Change slide every 3 seconds (adjust as needed)
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
@@ -61,25 +62,31 @@ const Carousel = () => {
   };
 
   return (
-    <div className='max-w-[1240px] mx-auto px-4 py-16 relative flex justify-center items-center'>
+    <div className='relative px-8 py-16'>
       <BsArrowLeftSquareFill
         onClick={prevSlide}
-        className='absolute top-[50%] text-3xl text-white cursor-pointer left-8'
+        className='absolute top-1/2 left-0 transform -translate-y-1/2 text-3xl text-white cursor-pointer z-10'
       />
       <BsArrowRightSquareFill
         onClick={nextSlide}
-        className='absolute top-[50%] text-3xl text-white cursor-pointer right-8'
+        className='absolute top-1/2 right-0 transform -translate-y-1/2 text-3xl text-white cursor-pointer z-10'
       />
-      {sliderData.map((item, index) => (
-        <div  key={index}
-        className={`absolute pt-8 top-0 left-0 w-full h-full transition-opacity duration-500 ${
-          index === slide ? 'opacity-100' : 'opacity-0'
-        }`}>
-          {index === slide && (
-            <img className='w-full rounded-md' src={item.url} alt={`Slide ${index}`} />
-          )}
-        </div>
-      ))}
+      <div className='max-w-[1240px] mx-auto px-4 py-48 relative flex justify-center items-center'>
+        {sliderData.map((item, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-500 ease-in-out delay-100 ${
+              index === slide ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
+           
+          >
+   
+            {index === slide && (
+              <img className='w-full h-full object-cover rounded-md' src={item.url} alt={`Slide ${index}`} />
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

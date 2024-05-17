@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel'; // Assuming you've imported the Carousel component correctly
-import Crsl from './crsl';
+import Crsl from './Crsl';
 function Search2() {
     return (
         <div className='max-w-[1240px] h-full mx-auto grid lg:grid-cols-3 gap-4 px-4 py-4'>

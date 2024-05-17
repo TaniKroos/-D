@@ -24,16 +24,17 @@ function App() {
         <Hero  />
     
         <Destinations />
-        <Se  />
+        {/* <Se  /> */}
         
     {/* <Search2 /> */}
+     <Carousel />
        
         <Selects />
         {/* <Se/> */}
         {/* <Carousel /> */}
-        {/* <Search /> */}
+        <Search />
        <TestimonialSection />
-
+       {/* <Crsl /> */}
         <Footer />
         {/* <Form /> */}
         
