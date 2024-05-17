@@ -71,7 +71,7 @@ const Carousel = () => {
         onClick={nextSlide}
         className='absolute top-1/2 right-0 transform -translate-y-1/2 text-3xl text-white cursor-pointer z-10'
       />
-      <div className='max-w-[1240px] mx-auto px-4 py-48 relative flex justify-center items-center'>
+      <div className='max-w-[1240px] max-h-[800px] mx-auto px-4 py-48 relative flex justify-center items-center'>
         {sliderData.map((item, index) => (
           <div
             key={index}

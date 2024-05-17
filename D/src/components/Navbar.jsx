@@ -67,9 +67,9 @@ function Navbar() {
                  {nav ? <AiOutlineClose size={20} /> : <HiOutlineMenuAlt4 size={20} />}
                  
             </div>
-            <div onClick={handleNav} className={nav ? ' text-black absolute left-0 top-0 w-full bg-gray-100/90 px-4 py-4 flex flex-col' : 'absolute left-[-100%]'} >
+            <div onClick={handleNav} className={nav ? ' text-black absolute left-0 top-0 w-full opacity-90 bg-gray-300 px-4 py-4 flex flex-col' : 'absolute left-[-100%]'} >
                 <ul>
-                    <h1>TravelBasket</h1>
+                    <h1>Travel Basket</h1>
                     {/* <li className='border-b'>Home</li>
                     <li className='border-b'>Destinations</li>
                     <li className='border-b'>Travel</li>
@@ -83,7 +83,7 @@ function Navbar() {
                         <li>+91 8447951790</li>
                         <li>Email</li>
                         <li>tanishsaini26@gmail.com</li>
-                        <li><a className='italic text-red-500' href="https://forms.gle/sUsYP2RafznSAsEcA">Query</a></li>
+                        <li><a className='italic text-red-500' href="https://forms.gle/sUsYP2RafznSAsEcA">Inquire</a></li>
                     </ul>
                     <div className='flex justify-between my-6'>
                 <FaFacebook className='icon' />
