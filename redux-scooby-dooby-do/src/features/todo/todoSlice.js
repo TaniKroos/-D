@@ -5,7 +5,7 @@ const initialState = {
     todos: [
         {
             id: 1,
-            text: "Hello Reuss"
+            text: "Hello Reus"
         }
     ]
 }
@@ -27,20 +27,18 @@ export const todoSlice = createSlice({
 
         },
         removeTodo: (state , action) => {
-                const d = action.id
+  
                 state.todos = state.todos.filter((todo) => 
-                todo.id !== d
+                todo.id !== action.payload
             )
         },
 
-        updateTodo: (state,action) => {
-            const updateTodos = state.todos.map( todo => {
-                if(todo.id === action.id){
-                    return {...todo, text: action.payload}
-                }
-                return todo;
-            })
-            state.todos = updateTodos
+        updateTodo: (state, action) => {
+            const { id, payload } = action.payload;
+            const existingTodo = state.todos.find(todo => todo.id === id);
+            if (existingTodo) {
+                existingTodo.text = payload;
+            }
         }
 
     }
